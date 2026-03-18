@@ -16,7 +16,7 @@ void Screen2View::setupScreen()
     Screen2ViewBase::setupScreen();
     actionCount = 0;
     dynamicStatusText.setWildcard(dynamicStatusBuffer);
-    updateDynamicStatus("Mode ARRET");
+    updateDynamicStatus(false);
     applyVisualState(7, 15, 28, 18, 35, 64, 99, 186, 204, 14, 24, 43, 48, 66, 98, 10, 16, 29, 72, 82, 98, 72, 82, 98);
 #ifndef SIMULATOR
     HAL_GPIO_WritePin(GPIOG, GPIO_PIN_13 | GPIO_PIN_14, GPIO_PIN_RESET);
@@ -56,16 +56,23 @@ void Screen2View::applyVisualState(uint8_t backgroundRed, uint8_t backgroundGree
     redLedIndicator.invalidate();
 }
 
-void Screen2View::updateDynamicStatus(const char* modeLabel)
+void Screen2View::updateDynamicStatus(bool ledsEnabled)
 {
-    Unicode::snprintf(dynamicStatusBuffer, DYNAMIC_STATUS_BUFFER_SIZE, "%s %u", modeLabel, actionCount);
+    if (ledsEnabled)
+    {
+        Unicode::snprintf(dynamicStatusBuffer, DYNAMIC_STATUS_BUFFER_SIZE, "Etat actuel ALLUME %u", actionCount);
+    }
+    else
+    {
+        Unicode::snprintf(dynamicStatusBuffer, DYNAMIC_STATUS_BUFFER_SIZE, "Etat actuel ARRET %u", actionCount);
+    }
     dynamicStatusText.invalidate();
 }
 
 void Screen2View::function1()
 {
     actionCount++;
-    updateDynamicStatus("Mode ARRET");
+    updateDynamicStatus(false);
     applyVisualState(7, 15, 28, 18, 35, 64, 99, 186, 204, 14, 24, 43, 48, 66, 98, 10, 16, 29, 72, 82, 98, 72, 82, 98);
 
 #ifndef SIMULATOR
@@ -76,7 +83,7 @@ void Screen2View::function1()
 void Screen2View::function2()
 {
     actionCount++;
-    updateDynamicStatus("Mode ALLUME");
+    updateDynamicStatus(true);
     applyVisualState(10, 36, 52, 19, 82, 104, 124, 225, 203, 15, 52, 67, 93, 192, 208, 8, 28, 40, 86, 228, 133, 255, 107, 107);
 
 #ifndef SIMULATOR

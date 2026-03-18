@@ -75,7 +75,7 @@ Screen2ViewBase::Screen2ViewBase() :
     dynamicStatusText.setColor(touchgfx::Color::getColorFromRGB(238, 244, 250));
     add(dynamicStatusText);
 
-    buttonWithLabelOn.setXY(51, 242);
+    buttonWithLabelOn.setXY(51, 228);
     buttonWithLabelOn.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_36_SMALL_ROUND_ACTIVE_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_36_SMALL_ROUND_PRESSED_ID));
     buttonWithLabelOn.setLabelText(touchgfx::TypedText(T_UI_BUTTON_ON));
     buttonWithLabelOn.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -83,7 +83,7 @@ Screen2ViewBase::Screen2ViewBase() :
     buttonWithLabelOn.setAction(buttonCallback);
     add(buttonWithLabelOn);
 
-    buttonWithLabelOff.setXY(51, 282);
+    buttonWithLabelOff.setXY(51, 268);
     buttonWithLabelOff.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_36_SMALL_ROUND_ACTION_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_36_SMALL_ROUND_PRESSED_ID));
     buttonWithLabelOff.setLabelText(touchgfx::TypedText(T_UI_BUTTON_OFF));
     buttonWithLabelOff.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));

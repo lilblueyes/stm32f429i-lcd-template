@@ -34,7 +34,7 @@
         <Translation Language="GB">LED ON</Translation>
       </Text>
       <Text Id="UI_DYNAMIC_STATUS" Alignment="Left" TypographyId="Small">
-        <Translation Language="GB">Etat actuel : &lt;state&gt;</Translation>
+        <Translation Language="GB">&lt;state&gt;</Translation>
       </Text>
     </TextGroup>
   </Texts>

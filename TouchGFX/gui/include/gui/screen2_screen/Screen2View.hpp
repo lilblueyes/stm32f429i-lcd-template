@@ -27,7 +27,7 @@ protected:
                           uint8_t footerRed, uint8_t footerGreen, uint8_t footerBlue,
                           uint8_t greenLedRed, uint8_t greenLedGreen, uint8_t greenLedBlue,
                           uint8_t redLedRed, uint8_t redLedGreen, uint8_t redLedBlue);
-    void updateDynamicStatus(const char* modeLabel);
+    void updateDynamicStatus(bool ledsEnabled);
 
     touchgfx::Unicode::UnicodeChar dynamicStatusBuffer[DYNAMIC_STATUS_BUFFER_SIZE];
     uint16_t actionCount;
