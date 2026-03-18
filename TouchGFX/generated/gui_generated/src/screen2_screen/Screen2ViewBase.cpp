@@ -29,7 +29,7 @@ Screen2ViewBase::Screen2ViewBase() :
     statusCard.setColor(touchgfx::Color::getColorFromRGB(14, 24, 43));
     add(statusCard);
 
-    statusDivider.setPosition(28, 146, 184, 2);
+    statusDivider.setPosition(28, 142, 184, 2);
     statusDivider.setColor(touchgfx::Color::getColorFromRGB(48, 66, 98));
     add(statusDivider);
 
@@ -37,11 +37,11 @@ Screen2ViewBase::Screen2ViewBase() :
     footerStrip.setColor(touchgfx::Color::getColorFromRGB(10, 16, 29));
     add(footerStrip);
 
-    greenLedIndicator.setPosition(31, 154, 12, 12);
+    greenLedIndicator.setPosition(31, 158, 12, 12);
     greenLedIndicator.setColor(touchgfx::Color::getColorFromRGB(72, 82, 98));
     add(greenLedIndicator);
 
-    redLedIndicator.setPosition(129, 154, 12, 12);
+    redLedIndicator.setPosition(129, 158, 12, 12);
     redLedIndicator.setColor(touchgfx::Color::getColorFromRGB(72, 82, 98));
     add(redLedIndicator);
 
@@ -60,27 +60,17 @@ Screen2ViewBase::Screen2ViewBase() :
     subtitleText.setColor(touchgfx::Color::getColorFromRGB(156, 179, 202));
     add(subtitleText);
 
-    statusTitle.setPosition(28, 114, 160, 20);
-    statusTitle.setTypedText(touchgfx::TypedText(T_UI_STATUS_TITLE));
-    statusTitle.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    add(statusTitle);
-
-    statusHint.setPosition(28, 180, 184, 12);
-    statusHint.setTypedText(touchgfx::TypedText(T_UI_STATUS_HINT));
-    statusHint.setColor(touchgfx::Color::getColorFromRGB(167, 188, 211));
-    add(statusHint);
-
-    greenLedLabel.setPosition(52, 154, 72, 12);
+    greenLedLabel.setPosition(52, 158, 72, 12);
     greenLedLabel.setTypedText(touchgfx::TypedText(T_UI_LED_GREEN));
     greenLedLabel.setColor(touchgfx::Color::getColorFromRGB(180, 204, 221));
     add(greenLedLabel);
 
-    redLedLabel.setPosition(150, 154, 62, 12);
+    redLedLabel.setPosition(150, 158, 62, 12);
     redLedLabel.setTypedText(touchgfx::TypedText(T_UI_LED_RED));
     redLedLabel.setColor(touchgfx::Color::getColorFromRGB(180, 204, 221));
     add(redLedLabel);
 
-    dynamicStatusText.setPosition(28, 164, 184, 12);
+    dynamicStatusText.setPosition(28, 120, 184, 12);
     dynamicStatusText.setTypedText(touchgfx::TypedText(T_UI_DYNAMIC_STATUS));
     dynamicStatusText.setColor(touchgfx::Color::getColorFromRGB(238, 244, 250));
     add(dynamicStatusText);

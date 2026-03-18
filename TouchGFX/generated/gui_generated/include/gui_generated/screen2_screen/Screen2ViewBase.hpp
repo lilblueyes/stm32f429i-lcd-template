@@ -44,8 +44,6 @@ protected:
     touchgfx::TextArea heroTitle;
     touchgfx::TextArea boardNameText;
     touchgfx::TextArea subtitleText;
-    touchgfx::TextArea statusTitle;
-    touchgfx::TextArea statusHint;
     touchgfx::TextArea greenLedLabel;
     touchgfx::TextArea redLedLabel;
     touchgfx::TextAreaWithOneWildcard dynamicStatusText;
