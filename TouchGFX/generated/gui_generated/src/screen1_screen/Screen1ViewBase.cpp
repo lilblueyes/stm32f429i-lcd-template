@@ -6,100 +6,34 @@
 #include <images/BitmapDatabase.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
 
-Screen1ViewBase::Screen1ViewBase() :
-    buttonCallback(this, &Screen1ViewBase::buttonCallbackHandler)
+Screen1ViewBase::Screen1ViewBase()
 {
     __background.setPosition(0, 0, 240, 320);
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
-    backgroundPanel.setPosition(0, 0, 240, 320);
-    backgroundPanel.setColor(touchgfx::Color::getColorFromRGB(7, 15, 28));
-    add(backgroundPanel);
+    splashBackdrop.setPosition(0, 0, 240, 320);
+    splashBackdrop.setColor(touchgfx::Color::getColorFromRGB(170, 20, 20));
+    add(splashBackdrop);
 
-    heroCard.setPosition(16, 16, 208, 108);
-    heroCard.setColor(touchgfx::Color::getColorFromRGB(18, 35, 64));
-    add(heroCard);
+    splashAccent.setPosition(0, 224, 240, 96);
+    splashAccent.setColor(touchgfx::Color::getColorFromRGB(122, 8, 8));
+    add(splashAccent);
 
-    accentBar.setPosition(28, 28, 8, 84);
-    accentBar.setColor(touchgfx::Color::getColorFromRGB(99, 186, 204));
-    add(accentBar);
-
-    statusCard.setPosition(16, 140, 208, 84);
-    statusCard.setColor(touchgfx::Color::getColorFromRGB(14, 24, 43));
-    add(statusCard);
-
-    statusDivider.setPosition(28, 170, 184, 2);
-    statusDivider.setColor(touchgfx::Color::getColorFromRGB(48, 66, 98));
-    add(statusDivider);
-
-    footerStrip.setPosition(0, 232, 240, 88);
-    footerStrip.setColor(touchgfx::Color::getColorFromRGB(10, 16, 29));
-    add(footerStrip);
-
-    greenLedIndicator.setPosition(31, 177, 12, 12);
-    greenLedIndicator.setColor(touchgfx::Color::getColorFromRGB(72, 82, 98));
-    add(greenLedIndicator);
-
-    redLedIndicator.setPosition(129, 177, 12, 12);
-    redLedIndicator.setColor(touchgfx::Color::getColorFromRGB(72, 82, 98));
-    add(redLedIndicator);
-
-    heroTitle.setPosition(48, 28, 150, 20);
+    heroTitle.setPosition(20, 112, 200, 20);
     heroTitle.setTypedText(touchgfx::TypedText(T_UI_HERO_TITLE));
     heroTitle.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     add(heroTitle);
 
-    boardNameText.setPosition(48, 56, 160, 20);
+    boardNameText.setPosition(20, 142, 200, 12);
     boardNameText.setTypedText(touchgfx::TypedText(T_UI_BOARD_NAME));
-    boardNameText.setColor(touchgfx::Color::getColorFromRGB(214, 227, 238));
+    boardNameText.setColor(touchgfx::Color::getColorFromRGB(255, 226, 226));
     add(boardNameText);
 
-    subtitleText.setPosition(48, 82, 160, 12);
+    subtitleText.setPosition(20, 160, 200, 12);
     subtitleText.setTypedText(touchgfx::TypedText(T_UI_SUBTITLE));
-    subtitleText.setColor(touchgfx::Color::getColorFromRGB(156, 179, 202));
+    subtitleText.setColor(touchgfx::Color::getColorFromRGB(255, 206, 206));
     add(subtitleText);
-
-    statusTitle.setPosition(28, 148, 160, 20);
-    statusTitle.setTypedText(touchgfx::TypedText(T_UI_STATUS_TITLE));
-    statusTitle.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    add(statusTitle);
-
-    statusHint.setPosition(28, 202, 184, 12);
-    statusHint.setTypedText(touchgfx::TypedText(T_UI_STATUS_HINT));
-    statusHint.setColor(touchgfx::Color::getColorFromRGB(167, 188, 211));
-    add(statusHint);
-
-    greenLedLabel.setPosition(52, 177, 72, 12);
-    greenLedLabel.setTypedText(touchgfx::TypedText(T_UI_LED_GREEN));
-    greenLedLabel.setColor(touchgfx::Color::getColorFromRGB(180, 204, 221));
-    add(greenLedLabel);
-
-    redLedLabel.setPosition(150, 177, 62, 12);
-    redLedLabel.setTypedText(touchgfx::TypedText(T_UI_LED_RED));
-    redLedLabel.setColor(touchgfx::Color::getColorFromRGB(180, 204, 221));
-    add(redLedLabel);
-
-    dynamicStatusText.setPosition(28, 190, 184, 12);
-    dynamicStatusText.setTypedText(touchgfx::TypedText(T_UI_DYNAMIC_STATUS));
-    dynamicStatusText.setColor(touchgfx::Color::getColorFromRGB(238, 244, 250));
-    add(dynamicStatusText);
-
-    buttonWithLabelOn.setXY(51, 242);
-    buttonWithLabelOn.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_36_SMALL_ROUND_ACTIVE_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_36_SMALL_ROUND_PRESSED_ID));
-    buttonWithLabelOn.setLabelText(touchgfx::TypedText(T_UI_BUTTON_ON));
-    buttonWithLabelOn.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonWithLabelOn.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonWithLabelOn.setAction(buttonCallback);
-    add(buttonWithLabelOn);
-
-    buttonWithLabelOff.setXY(51, 282);
-    buttonWithLabelOff.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_36_SMALL_ROUND_ACTION_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_36_SMALL_ROUND_PRESSED_ID));
-    buttonWithLabelOff.setLabelText(touchgfx::TypedText(T_UI_BUTTON_OFF));
-    buttonWithLabelOff.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonWithLabelOff.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonWithLabelOff.setAction(buttonCallback);
-    add(buttonWithLabelOff);
 }
 
 Screen1ViewBase::~Screen1ViewBase()
@@ -110,16 +44,4 @@ Screen1ViewBase::~Screen1ViewBase()
 void Screen1ViewBase::setupScreen()
 {
 
-}
-
-void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
-{
-    if (&src == &buttonWithLabelOff)
-    {
-        function1();
-    }
-    if (&src == &buttonWithLabelOn)
-    {
-        function2();
-    }
 }

@@ -13,12 +13,29 @@ public:
     FrontendApplication(Model& m, FrontendHeap& heap);
     virtual ~FrontendApplication() { }
 
+    void startSplashTimer();
+    void stopSplashTimer();
+
     virtual void handleTickEvent()
     {
+        if (splashTimerActive)
+        {
+            splashTickCount++;
+            if (splashTickCount >= SPLASH_DURATION_TICKS)
+            {
+                splashTimerActive = false;
+                gotoScreen2ScreenCoverTransitionWest();
+            }
+        }
+
         model.tick();
         FrontendApplicationBase::handleTickEvent();
     }
 private:
+    static const uint16_t SPLASH_DURATION_TICKS = 300;
+
+    uint16_t splashTickCount;
+    bool splashTimerActive;
 };
 
 #endif // FRONTENDAPPLICATION_HPP

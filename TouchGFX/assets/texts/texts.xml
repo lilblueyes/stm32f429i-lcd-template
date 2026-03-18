@@ -9,17 +9,17 @@
       <Text Id="UI_HERO_TITLE" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">STM32F429I-DISCO</Translation>
       </Text>
-      <Text Id="UI_BOARD_NAME" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Carte de demo TouchGFX</Translation>
+      <Text Id="UI_BOARD_NAME" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">Template TouchGFX</Translation>
       </Text>
       <Text Id="UI_SUBTITLE" Alignment="Left" TypographyId="Small">
-        <Translation Language="GB">Ecran tactile 240x320</Translation>
+        <Translation Language="GB">LCD tactile 240x320</Translation>
       </Text>
       <Text Id="UI_STATUS_TITLE" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Etat de la carte</Translation>
+        <Translation Language="GB">Etat en direct</Translation>
       </Text>
       <Text Id="UI_STATUS_HINT" Alignment="Left" TypographyId="Small">
-        <Translation Language="GB">Le texte ci-dessous change en direct</Translation>
+        <Translation Language="GB">Texte mis a jour sur la carte</Translation>
       </Text>
       <Text Id="UI_LED_GREEN" Alignment="Left" TypographyId="Small">
         <Translation Language="GB">LD3 Verte</Translation>
@@ -27,11 +27,11 @@
       <Text Id="UI_LED_RED" Alignment="Left" TypographyId="Small">
         <Translation Language="GB">LD4 Rouge</Translation>
       </Text>
-      <Text Id="UI_BUTTON_OFF" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">LEDs eteintes</Translation>
+      <Text Id="UI_BUTTON_OFF" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">LED OFF</Translation>
       </Text>
-      <Text Id="UI_BUTTON_ON" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">LEDs allumees</Translation>
+      <Text Id="UI_BUTTON_ON" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">LED ON</Translation>
       </Text>
       <Text Id="UI_DYNAMIC_STATUS" Alignment="Left" TypographyId="Small">
         <Translation Language="GB">Etat actuel : &lt;state&gt;</Translation>

@@ -8,9 +8,7 @@
 #include <mvp/View.hpp>
 #include <gui/screen1_screen/Screen1Presenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
-#include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
-#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
 {
@@ -18,18 +16,6 @@ public:
     Screen1ViewBase();
     virtual ~Screen1ViewBase();
     virtual void setupScreen();
-
-    /*
-     * Virtual Action Handlers
-     */
-    virtual void function1()
-    {
-        // Override and implement this function in Screen1
-    }
-    virtual void function2()
-    {
-        // Override and implement this function in Screen1
-    }
 
 protected:
     FrontendApplication& application() {
@@ -40,36 +26,11 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
-    touchgfx::Box backgroundPanel;
-    touchgfx::Box heroCard;
-    touchgfx::Box accentBar;
-    touchgfx::Box statusCard;
-    touchgfx::Box statusDivider;
-    touchgfx::Box footerStrip;
-    touchgfx::Box greenLedIndicator;
-    touchgfx::Box redLedIndicator;
+    touchgfx::Box splashBackdrop;
+    touchgfx::Box splashAccent;
     touchgfx::TextArea heroTitle;
     touchgfx::TextArea boardNameText;
     touchgfx::TextArea subtitleText;
-    touchgfx::TextArea statusTitle;
-    touchgfx::TextArea statusHint;
-    touchgfx::TextArea greenLedLabel;
-    touchgfx::TextArea redLedLabel;
-    touchgfx::TextAreaWithOneWildcard dynamicStatusText;
-    touchgfx::ButtonWithLabel buttonWithLabelOn;
-    touchgfx::ButtonWithLabel buttonWithLabelOff;
-
-private:
-
-    /*
-     * Callback Declarations
-     */
-    touchgfx::Callback<Screen1ViewBase, const touchgfx::AbstractButton&> buttonCallback;
-
-    /*
-     * Callback Handler Declarations
-     */
-    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
 };
 

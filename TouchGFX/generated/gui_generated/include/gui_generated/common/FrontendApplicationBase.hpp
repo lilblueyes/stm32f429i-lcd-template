@@ -22,6 +22,7 @@ public:
 
     // Screen1
     void gotoScreen1ScreenNoTransition();
+    void gotoScreen2ScreenCoverTransitionWest();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
@@ -30,6 +31,7 @@ protected:
 
     // Screen1
     void gotoScreen1ScreenNoTransitionImpl();
+    void gotoScreen2ScreenCoverTransitionWestImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP
