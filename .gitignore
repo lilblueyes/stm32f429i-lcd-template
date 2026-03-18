@@ -2,6 +2,11 @@
 .metadata/
 .settings/
 
+# Other local IDE metadata
+.vs/
+.vscode/
+.idea/
+
 # Build outputs
 Debug/
 Release/
@@ -30,6 +35,17 @@ TouchGFX/generated/simulator/touchgfx.res
 # Simulator/runtime binaries
 *.exe
 *.dll
+*.pdb
+*.ilk
+*.obj
+*.user
+*.VC.db
+*.VC.VC.opendb
+*.opendb
+*.sdf
+*.opensdf
+*.tlog
+*.lastbuildstate
 
 # Logs and temp files
 *.log
