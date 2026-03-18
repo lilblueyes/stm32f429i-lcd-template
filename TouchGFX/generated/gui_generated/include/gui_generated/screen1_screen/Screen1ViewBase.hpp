@@ -10,6 +10,7 @@
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
 {
@@ -54,6 +55,7 @@ protected:
     touchgfx::TextArea statusHint;
     touchgfx::TextArea greenLedLabel;
     touchgfx::TextArea redLedLabel;
+    touchgfx::TextAreaWithOneWildcard dynamicStatusText;
     touchgfx::ButtonWithLabel buttonWithLabelOn;
     touchgfx::ButtonWithLabel buttonWithLabelOff;
 

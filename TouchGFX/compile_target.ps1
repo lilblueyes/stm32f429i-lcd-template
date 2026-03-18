@@ -51,6 +51,8 @@ function Find-MakeExe {
 }
 
 $cubeIdeC = Find-CubeIdeC
+$makeExe = Find-MakeExe
+
 if ($cubeIdeC) {
     & $cubeIdeC --launcher.suppressErrors -nosplash `
         -application org.eclipse.cdt.managedbuilder.core.headlessbuild `
@@ -60,7 +62,6 @@ if ($cubeIdeC) {
     exit $LASTEXITCODE
 }
 
-$makeExe = Find-MakeExe
 if (-not $makeExe) {
     throw "Neither stm32cubeidec.exe nor make.exe could be found."
 }

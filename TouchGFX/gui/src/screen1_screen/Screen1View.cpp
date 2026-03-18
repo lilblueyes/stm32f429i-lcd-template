@@ -1,18 +1,26 @@
 #include <gui/screen1_screen/Screen1View.hpp>
 #include <touchgfx/Color.hpp>
+#include <touchgfx/Unicode.hpp>
 
 #ifndef SIMULATOR
 #include <stm32f4xx_hal.h>
 #endif
 
 Screen1View::Screen1View()
+    : actionCount(0)
 {
 }
 
 void Screen1View::setupScreen()
 {
     Screen1ViewBase::setupScreen();
-    function1();
+    actionCount = 0;
+    dynamicStatusText.setWildcard(dynamicStatusBuffer);
+    updateDynamicStatus("Mode ARRET");
+    applyVisualState(7, 15, 28, 18, 35, 64, 99, 186, 204, 14, 24, 43, 48, 66, 98, 10, 16, 29, 72, 82, 98, 72, 82, 98);
+#ifndef SIMULATOR
+    HAL_GPIO_WritePin(GPIOG, GPIO_PIN_13 | GPIO_PIN_14, GPIO_PIN_RESET);
+#endif
 }
 
 void Screen1View::tearDownScreen()
@@ -48,8 +56,16 @@ void Screen1View::applyVisualState(uint8_t backgroundRed, uint8_t backgroundGree
     redLedIndicator.invalidate();
 }
 
+void Screen1View::updateDynamicStatus(const char* modeLabel)
+{
+    Unicode::snprintf(dynamicStatusBuffer, DYNAMIC_STATUS_BUFFER_SIZE, "%s %u", modeLabel, actionCount);
+    dynamicStatusText.invalidate();
+}
+
 void Screen1View::function1()
 {
+    actionCount++;
+    updateDynamicStatus("Mode ARRET");
     applyVisualState(7, 15, 28, 18, 35, 64, 99, 186, 204, 14, 24, 43, 48, 66, 98, 10, 16, 29, 72, 82, 98, 72, 82, 98);
 
 #ifndef SIMULATOR
@@ -61,6 +77,8 @@ void Screen1View::function1()
 
 void Screen1View::function2()
 {
+    actionCount++;
+    updateDynamicStatus("Mode ALLUME");
     applyVisualState(10, 36, 52, 19, 82, 104, 124, 225, 203, 15, 52, 67, 93, 192, 208, 8, 28, 40, 86, 228, 133, 255, 107, 107);
 
 #ifndef SIMULATOR

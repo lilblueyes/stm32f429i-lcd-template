@@ -6,38 +6,41 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
-      <Text Id="UI_HERO_TITLE" Alignment="Left" TypographyId="Large">
-        <Translation Language="GB">F429I</Translation>
+      <Text Id="UI_HERO_TITLE" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">STM32F429I-DISCO</Translation>
       </Text>
       <Text Id="UI_BOARD_NAME" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">STM32 Discovery</Translation>
+        <Translation Language="GB">Carte de demo TouchGFX</Translation>
       </Text>
       <Text Id="UI_SUBTITLE" Alignment="Left" TypographyId="Small">
-        <Translation Language="GB">240x320 LCD Touch Template</Translation>
+        <Translation Language="GB">Ecran tactile 240x320</Translation>
       </Text>
       <Text Id="UI_STATUS_TITLE" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Board Status</Translation>
+        <Translation Language="GB">Etat de la carte</Translation>
       </Text>
       <Text Id="UI_STATUS_HINT" Alignment="Left" TypographyId="Small">
-        <Translation Language="GB">Tap a mode to toggle both LEDs</Translation>
+        <Translation Language="GB">Le texte ci-dessous change en direct</Translation>
       </Text>
       <Text Id="UI_LED_GREEN" Alignment="Left" TypographyId="Small">
-        <Translation Language="GB">LD3 Green</Translation>
+        <Translation Language="GB">LD3 Verte</Translation>
       </Text>
       <Text Id="UI_LED_RED" Alignment="Left" TypographyId="Small">
-        <Translation Language="GB">LD4 Red</Translation>
+        <Translation Language="GB">LD4 Rouge</Translation>
       </Text>
       <Text Id="UI_BUTTON_OFF" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">LEDs OFF</Translation>
+        <Translation Language="GB">LEDs eteintes</Translation>
       </Text>
       <Text Id="UI_BUTTON_ON" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">LEDs ON</Translation>
+        <Translation Language="GB">LEDs allumees</Translation>
+      </Text>
+      <Text Id="UI_DYNAMIC_STATUS" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">Etat actuel : &lt;state&gt;</Translation>
       </Text>
     </TextGroup>
   </Texts>
   <Typographies>
     <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 :-" />
   </Typographies>
 </TextDatabase>

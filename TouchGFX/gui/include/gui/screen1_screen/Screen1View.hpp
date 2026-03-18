@@ -2,6 +2,7 @@
 #define SCREEN1VIEW_HPP
 
 #include <stdint.h>
+#include <touchgfx/Unicode.hpp>
 #include <gui_generated/screen1_screen/Screen1ViewBase.hpp>
 #include <gui/screen1_screen/Screen1Presenter.hpp>
 
@@ -15,6 +16,8 @@ public:
     virtual void function1();
     virtual void function2();
 protected:
+    static const uint16_t DYNAMIC_STATUS_BUFFER_SIZE = 32;
+
     void applyVisualState(uint8_t backgroundRed, uint8_t backgroundGreen, uint8_t backgroundBlue,
                           uint8_t heroRed, uint8_t heroGreen, uint8_t heroBlue,
                           uint8_t accentRed, uint8_t accentGreen, uint8_t accentBlue,
@@ -23,6 +26,10 @@ protected:
                           uint8_t footerRed, uint8_t footerGreen, uint8_t footerBlue,
                           uint8_t greenLedRed, uint8_t greenLedGreen, uint8_t greenLedBlue,
                           uint8_t redLedRed, uint8_t redLedGreen, uint8_t redLedBlue);
+    void updateDynamicStatus(const char* modeLabel);
+
+    touchgfx::Unicode::UnicodeChar dynamicStatusBuffer[DYNAMIC_STATUS_BUFFER_SIZE];
+    uint16_t actionCount;
 };
 
 #endif // SCREEN1VIEW_HPP

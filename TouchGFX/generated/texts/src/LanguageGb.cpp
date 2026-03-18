@@ -10,13 +10,14 @@ KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE;
 // Remap all strings
 TEXT_LOCATION_FLASH_PRAGMA
 KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
-    0,   // T_UI_HERO_TITLE: "F429I"
-    6,   // T_UI_BOARD_NAME: "STM32 Discovery"
-    22,  // T_UI_SUBTITLE: "240x320 LCD Touch Template"
-    49,  // T_UI_STATUS_TITLE: "Board Status"
-    62,  // T_UI_STATUS_HINT: "Tap a mode to toggle both LEDs"
-    93,  // T_UI_LED_GREEN: "LD3 Green"
-    103, // T_UI_LED_RED: "LD4 Red"
-    111, // T_UI_BUTTON_OFF: "LEDs OFF"
-    120  // T_UI_BUTTON_ON: "LEDs ON"
+    115, // T_UI_HERO_TITLE: "STM32F429I-DISCO"
+    37,  // T_UI_BOARD_NAME: "Carte de demo TouchGFX"
+    60,  // T_UI_SUBTITLE: "Ecran tactile 240x320"
+    98,  // T_UI_STATUS_TITLE: "Etat de la carte"
+    0,   // T_UI_STATUS_HINT: "Le texte ci-dessous change en direct"
+    160, // T_UI_LED_GREEN: "LD3 Verte"
+    170, // T_UI_LED_RED: "LD4 Rouge"
+    146, // T_UI_BUTTON_OFF: "LEDs eteintes"
+    132, // T_UI_BUTTON_ON: "LEDs allumees"
+    82   // T_UI_DYNAMIC_STATUS: "Etat actuel : <>"
 };
