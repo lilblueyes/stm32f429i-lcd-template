@@ -10,6 +10,13 @@ KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE;
 // Remap all strings
 TEXT_LOCATION_FLASH_PRAGMA
 KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
-    0, // T___SINGLEUSE_UFJS: "LED OFF"
-    8  // T___SINGLEUSE_WO4V: "LED ON"
+    0,   // T_UI_HERO_TITLE: "F429I"
+    6,   // T_UI_BOARD_NAME: "STM32 Discovery"
+    22,  // T_UI_SUBTITLE: "240x320 LCD Touch Template"
+    49,  // T_UI_STATUS_TITLE: "Board Status"
+    62,  // T_UI_STATUS_HINT: "Tap a mode to toggle both LEDs"
+    93,  // T_UI_LED_GREEN: "LD3 Green"
+    103, // T_UI_LED_RED: "LD4 Red"
+    111, // T_UI_BUTTON_OFF: "LEDs OFF"
+    120  // T_UI_BUTTON_ON: "LEDs ON"
 };

@@ -6,11 +6,32 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
-      <Text Id="__SingleUse_UFJS" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">LED OFF</Translation>
+      <Text Id="UI_HERO_TITLE" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">F429I</Translation>
       </Text>
-      <Text Id="__SingleUse_WO4V" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">LED ON</Translation>
+      <Text Id="UI_BOARD_NAME" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">STM32 Discovery</Translation>
+      </Text>
+      <Text Id="UI_SUBTITLE" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">240x320 LCD Touch Template</Translation>
+      </Text>
+      <Text Id="UI_STATUS_TITLE" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Board Status</Translation>
+      </Text>
+      <Text Id="UI_STATUS_HINT" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">Tap a mode to toggle both LEDs</Translation>
+      </Text>
+      <Text Id="UI_LED_GREEN" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">LD3 Green</Translation>
+      </Text>
+      <Text Id="UI_LED_RED" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">LD4 Red</Translation>
+      </Text>
+      <Text Id="UI_BUTTON_OFF" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">LEDs OFF</Translation>
+      </Text>
+      <Text Id="UI_BUTTON_ON" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">LEDs ON</Translation>
       </Text>
     </TextGroup>
   </Texts>

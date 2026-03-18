@@ -6,25 +6,220 @@
         "Components": [
           {
             "Type": "Box",
-            "Name": "box1",
+            "Name": "backgroundPanel",
             "Width": 240,
             "Height": 320,
             "Color": {
-              "Red": 2,
-              "Green": 57,
-              "Blue": 235
+              "Red": 7,
+              "Green": 15,
+              "Blue": 28
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "heroCard",
+            "X": 16,
+            "Y": 16,
+            "Width": 208,
+            "Height": 116,
+            "Color": {
+              "Red": 18,
+              "Green": 35,
+              "Blue": 64
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "accentBar",
+            "X": 28,
+            "Y": 28,
+            "Width": 8,
+            "Height": 92,
+            "Color": {
+              "Red": 99,
+              "Green": 186,
+              "Blue": 204
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "statusCard",
+            "X": 16,
+            "Y": 148,
+            "Width": 208,
+            "Height": 72,
+            "Color": {
+              "Red": 14,
+              "Green": 24,
+              "Blue": 43
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "statusDivider",
+            "X": 28,
+            "Y": 178,
+            "Width": 184,
+            "Height": 2,
+            "Color": {
+              "Red": 48,
+              "Green": 66,
+              "Blue": 98
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "footerStrip",
+            "Y": 232,
+            "Width": 240,
+            "Height": 88,
+            "Color": {
+              "Red": 10,
+              "Green": 16,
+              "Blue": 29
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "greenLedIndicator",
+            "X": 31,
+            "Y": 185,
+            "Width": 12,
+            "Height": 12,
+            "Color": {
+              "Red": 72,
+              "Green": 82,
+              "Blue": 98
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "redLedIndicator",
+            "X": 129,
+            "Y": 185,
+            "Width": 12,
+            "Height": 12,
+            "Color": {
+              "Red": 72,
+              "Green": 82,
+              "Blue": 98
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "heroTitle",
+            "X": 48,
+            "Y": 24,
+            "Width": 150,
+            "Height": 40,
+            "TextId": "UI_HERO_TITLE",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "boardNameText",
+            "X": 48,
+            "Y": 72,
+            "Width": 160,
+            "Height": 20,
+            "TextId": "UI_BOARD_NAME",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 214,
+              "Green": 227,
+              "Blue": 238
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "subtitleText",
+            "X": 48,
+            "Y": 96,
+            "Width": 160,
+            "Height": 12,
+            "TextId": "UI_SUBTITLE",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 156,
+              "Green": 179,
+              "Blue": 202
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "statusTitle",
+            "X": 28,
+            "Y": 154,
+            "Width": 140,
+            "Height": 20,
+            "TextId": "UI_STATUS_TITLE",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "statusHint",
+            "X": 28,
+            "Y": 204,
+            "Width": 184,
+            "Height": 12,
+            "TextId": "UI_STATUS_HINT",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 167,
+              "Green": 188,
+              "Blue": 211
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "greenLedLabel",
+            "X": 52,
+            "Y": 185,
+            "Width": 70,
+            "Height": 12,
+            "TextId": "UI_LED_GREEN",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 180,
+              "Green": 204,
+              "Blue": 221
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "redLedLabel",
+            "X": 150,
+            "Y": 185,
+            "Width": 60,
+            "Height": 12,
+            "TextId": "UI_LED_RED",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 180,
+              "Green": 204,
+              "Blue": 221
             }
           },
           {
             "Type": "ButtonWithLabel",
-            "Name": "buttonWithLabel1",
+            "Name": "buttonWithLabelOn",
             "X": 51,
-            "Y": 61,
+            "Y": 242,
             "Width": 138,
             "Height": 36,
             "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_36_small_round_pressed.png",
             "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_36_small_round_active.png",
-            "TextId": "__SingleUse_WO4V",
+            "TextId": "UI_BUTTON_ON",
             "ReleasedColor": {
               "Red": 255,
               "Green": 255,
@@ -40,14 +235,14 @@
           },
           {
             "Type": "ButtonWithLabel",
-            "Name": "buttonWithLabel1_1",
+            "Name": "buttonWithLabelOff",
             "X": 51,
-            "Y": 177,
+            "Y": 282,
             "Width": 138,
             "Height": 36,
             "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_36_small_round_pressed.png",
             "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_36_small_round_action.png",
-            "TextId": "__SingleUse_UFJS",
+            "TextId": "UI_BUTTON_OFF",
             "ReleasedColor": {
               "Red": 255,
               "Green": 255,
@@ -64,10 +259,10 @@
         ],
         "Interactions": [
           {
-            "InteractionName": "Interaction1",
+            "InteractionName": "TurnLedsOff",
             "Trigger": {
               "Type": "TriggerClicked",
-              "TriggerComponent": "buttonWithLabel1_1"
+              "TriggerComponent": "buttonWithLabelOff"
             },
             "Action": {
               "Type": "ActionCustom",
@@ -75,46 +270,14 @@
             }
           },
           {
-            "InteractionName": "Interaction2",
+            "InteractionName": "TurnLedsOn",
             "Trigger": {
               "Type": "TriggerClicked",
-              "TriggerComponent": "buttonWithLabel1"
+              "TriggerComponent": "buttonWithLabelOn"
             },
             "Action": {
               "Type": "ActionCustom",
               "FunctionName": "function2"
-            }
-          },
-          {
-            "InteractionName": "Interaction3",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "buttonWithLabel1_1"
-            },
-            "Action": {
-              "Type": "ActionSetColor",
-              "Color": {
-                "Red": 184,
-                "Green": 44,
-                "Blue": 44
-              },
-              "ActionComponent": "box1"
-            }
-          },
-          {
-            "InteractionName": "Interaction4",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "buttonWithLabel1"
-            },
-            "Action": {
-              "Type": "ActionSetColor",
-              "Color": {
-                "Red": 53,
-                "Green": 77,
-                "Blue": 184
-              },
-              "ActionComponent": "box1"
             }
           }
         ]

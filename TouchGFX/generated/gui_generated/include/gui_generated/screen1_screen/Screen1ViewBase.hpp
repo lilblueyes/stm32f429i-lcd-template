@@ -9,6 +9,7 @@
 #include <gui/screen1_screen/Screen1Presenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/ButtonWithLabel.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
 {
@@ -38,9 +39,23 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
-    touchgfx::Box box1;
-    touchgfx::ButtonWithLabel buttonWithLabel1;
-    touchgfx::ButtonWithLabel buttonWithLabel1_1;
+    touchgfx::Box backgroundPanel;
+    touchgfx::Box heroCard;
+    touchgfx::Box accentBar;
+    touchgfx::Box statusCard;
+    touchgfx::Box statusDivider;
+    touchgfx::Box footerStrip;
+    touchgfx::Box greenLedIndicator;
+    touchgfx::Box redLedIndicator;
+    touchgfx::TextArea heroTitle;
+    touchgfx::TextArea boardNameText;
+    touchgfx::TextArea subtitleText;
+    touchgfx::TextArea statusTitle;
+    touchgfx::TextArea statusHint;
+    touchgfx::TextArea greenLedLabel;
+    touchgfx::TextArea redLedLabel;
+    touchgfx::ButtonWithLabel buttonWithLabelOn;
+    touchgfx::ButtonWithLabel buttonWithLabelOff;
 
 private:
 
