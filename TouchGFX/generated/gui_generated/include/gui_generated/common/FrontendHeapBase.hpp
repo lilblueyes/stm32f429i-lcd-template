@@ -41,8 +41,7 @@ public:
      */
     typedef touchgfx::meta::TypeList< Screen1View,
             touchgfx::meta::TypeList< Screen2View,
-            touchgfx::meta::Nil
-            >
+            touchgfx::meta::Nil >
             > GeneratedViewTypes;
 
     /**
@@ -56,8 +55,7 @@ public:
      */
     typedef touchgfx::meta::TypeList< Screen1Presenter,
             touchgfx::meta::TypeList< Screen2Presenter,
-            touchgfx::meta::Nil
-            >
+            touchgfx::meta::Nil >
             > GeneratedPresenterTypes;
 
     /**

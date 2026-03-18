@@ -8,9 +8,9 @@
 #include <mvp/View.hpp>
 #include <gui/screen2_screen/Screen2Presenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
-#include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
 
 class Screen2ViewBase : public touchgfx::View<Screen2Presenter>
 {
@@ -19,12 +19,16 @@ public:
     virtual ~Screen2ViewBase();
     virtual void setupScreen();
 
+    /*
+     * Virtual Action Handlers
+     */
     virtual void function1()
     {
+        // Override and implement this function in Screen2
     }
-
     virtual void function2()
     {
+        // Override and implement this function in Screen2
     }
 
 protected:
@@ -32,6 +36,9 @@ protected:
         return *static_cast<FrontendApplication*>(touchgfx::Application::getInstance());
     }
 
+    /*
+     * Member Declarations
+     */
     touchgfx::Box __background;
     touchgfx::Box backgroundPanel;
     touchgfx::Box heroCard;
@@ -44,6 +51,8 @@ protected:
     touchgfx::TextArea heroTitle;
     touchgfx::TextArea boardNameText;
     touchgfx::TextArea subtitleText;
+    touchgfx::TextArea statusTitle;
+    touchgfx::TextArea statusHint;
     touchgfx::TextArea greenLedLabel;
     touchgfx::TextArea redLedLabel;
     touchgfx::TextAreaWithOneWildcard dynamicStatusText;
@@ -51,9 +60,17 @@ protected:
     touchgfx::ButtonWithLabel buttonWithLabelOff;
 
 private:
+
+    /*
+     * Callback Declarations
+     */
     touchgfx::Callback<Screen2ViewBase, const touchgfx::AbstractButton&> buttonCallback;
 
+    /*
+     * Callback Handler Declarations
+     */
     void buttonCallbackHandler(const touchgfx::AbstractButton& src);
+
 };
 
 #endif // SCREEN2VIEWBASE_HPP

@@ -4,7 +4,6 @@
 #include <gui_generated/screen1_screen/Screen1ViewBase.hpp>
 #include <touchgfx/Color.hpp>
 #include <images/BitmapDatabase.hpp>
-#include <texts/TextKeysAndLanguages.hpp>
 
 Screen1ViewBase::Screen1ViewBase()
 {
@@ -12,28 +11,9 @@ Screen1ViewBase::Screen1ViewBase()
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
-    splashBackdrop.setPosition(0, 0, 240, 320);
-    splashBackdrop.setColor(touchgfx::Color::getColorFromRGB(170, 20, 20));
-    add(splashBackdrop);
-
-    splashAccent.setPosition(0, 224, 240, 96);
-    splashAccent.setColor(touchgfx::Color::getColorFromRGB(170, 20, 20));
-    add(splashAccent);
-
-    heroTitle.setPosition(20, 112, 200, 20);
-    heroTitle.setTypedText(touchgfx::TypedText(T_UI_HERO_TITLE));
-    heroTitle.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    add(heroTitle);
-
-    boardNameText.setPosition(20, 142, 200, 12);
-    boardNameText.setTypedText(touchgfx::TypedText(T_UI_BOARD_NAME));
-    boardNameText.setColor(touchgfx::Color::getColorFromRGB(255, 226, 226));
-    add(boardNameText);
-
-    subtitleText.setPosition(20, 160, 200, 12);
-    subtitleText.setTypedText(touchgfx::TypedText(T_UI_SUBTITLE));
-    subtitleText.setColor(touchgfx::Color::getColorFromRGB(255, 206, 206));
-    add(subtitleText);
+    image1.setXY(0, 0);
+    image1.setBitmap(touchgfx::Bitmap(BITMAP_ENSTA_LOGO_ID));
+    add(image1);
 }
 
 Screen1ViewBase::~Screen1ViewBase()
