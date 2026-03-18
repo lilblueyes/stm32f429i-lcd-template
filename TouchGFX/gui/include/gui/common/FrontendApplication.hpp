@@ -24,7 +24,7 @@ public:
             if (splashTickCount >= SPLASH_DURATION_TICKS)
             {
                 splashTimerActive = false;
-                gotoScreen2ScreenBlockTransition();
+                gotoScreen2ScreenWipeTransitionEast();
             }
         }
 

@@ -14,8 +14,6 @@ Screen1ViewBase::Screen1ViewBase()
     image1.setXY(0, 0);
     image1.setBitmap(touchgfx::Bitmap(BITMAP_ENSTA_LOGO_ID));
     add(image1);
-
-    centerSplashImage();
 }
 
 Screen1ViewBase::~Screen1ViewBase()
@@ -28,8 +26,14 @@ void Screen1ViewBase::setupScreen()
 
 }
 
-void Screen1ViewBase::centerSplashImage()
+void Screen1ViewBase::handleKeyEvent(uint8_t key)
 {
-    const touchgfx::Bitmap splashBitmap = image1.getBitmap();
-    image1.setXY((240 - splashBitmap.getWidth()) / 2, (320 - splashBitmap.getHeight()) / 2);
+    if(0 == key)
+    {
+        //Interaction1
+        //When hardware button 0 clicked change screen to Screen2
+        //Go to Screen2 with wipe transition towards East
+        application().gotoScreen2ScreenWipeTransitionEast();
+    
+    }
 }

@@ -16,6 +16,7 @@ public:
     Screen1ViewBase();
     virtual ~Screen1ViewBase();
     virtual void setupScreen();
+    virtual void handleKeyEvent(uint8_t key);
 
 protected:
     FrontendApplication& application() {
@@ -27,8 +28,6 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::Image image1;
-
-    void centerSplashImage();
 
 private:
 

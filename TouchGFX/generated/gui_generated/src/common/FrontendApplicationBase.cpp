@@ -4,8 +4,8 @@
 #include <new>
 #include <gui_generated/common/FrontendApplicationBase.hpp>
 #include <gui/common/FrontendHeap.hpp>
-#include <touchgfx/transitions/BlockTransition.hpp>
 #include <touchgfx/transitions/NoTransition.hpp>
+#include <touchgfx/transitions/WipeTransition.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
 #include <touchgfx/Texts.hpp>
 #include <touchgfx/hal/HAL.hpp>
@@ -47,13 +47,15 @@ void FrontendApplicationBase::gotoScreen1ScreenNoTransitionImpl()
     touchgfx::makeTransition<Screen1View, Screen1Presenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
-void FrontendApplicationBase::gotoScreen2ScreenBlockTransition()
+// Screen2
+
+void FrontendApplicationBase::gotoScreen2ScreenWipeTransitionEast()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoScreen2ScreenBlockTransitionImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoScreen2ScreenWipeTransitionEastImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoScreen2ScreenBlockTransitionImpl()
+void FrontendApplicationBase::gotoScreen2ScreenWipeTransitionEastImpl()
 {
-    touchgfx::makeTransition<Screen2View, Screen2Presenter, touchgfx::BlockTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<Screen2View, Screen2Presenter, touchgfx::WipeTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

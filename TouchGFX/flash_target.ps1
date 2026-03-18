@@ -29,9 +29,20 @@ if (-not (Test-Path $elfPath)) {
 
 $programmerCli = Find-ProgrammerCli
 
-& $programmerCli -c port=SWD mode=UR -hardRst -w $elfPath -v -rst
-if ($LASTEXITCODE -ne 0) {
-    & $programmerCli -c port=SWD mode=HotPlug freq=4000 -w $elfPath -v -rst
+function Invoke-FlashAttempt {
+    param(
+        [string[]] $Arguments
+    )
+
+    & $programmerCli @Arguments
+    return $LASTEXITCODE
 }
 
-exit $LASTEXITCODE
+# HotPlug is the most reliable mode on this board in day-to-day use.
+$exitCode = Invoke-FlashAttempt @("-c", "port=SWD", "mode=HotPlug", "freq=4000", "-w", $elfPath, "-v", "-rst")
+
+if ($exitCode -ne 0) {
+    $exitCode = Invoke-FlashAttempt @("-c", "port=SWD", "mode=UR", "-hardRst", "-w", $elfPath, "-v", "-rst")
+}
+
+exit $exitCode
