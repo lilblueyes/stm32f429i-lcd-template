@@ -14,6 +14,8 @@ Screen1ViewBase::Screen1ViewBase()
     image1.setXY(0, 0);
     image1.setBitmap(touchgfx::Bitmap(BITMAP_ENSTA_LOGO_ID));
     add(image1);
+
+    centerSplashImage();
 }
 
 Screen1ViewBase::~Screen1ViewBase()
@@ -24,4 +26,10 @@ Screen1ViewBase::~Screen1ViewBase()
 void Screen1ViewBase::setupScreen()
 {
 
+}
+
+void Screen1ViewBase::centerSplashImage()
+{
+    const touchgfx::Bitmap splashBitmap = image1.getBitmap();
+    image1.setXY((240 - splashBitmap.getWidth()) / 2, (320 - splashBitmap.getHeight()) / 2);
 }

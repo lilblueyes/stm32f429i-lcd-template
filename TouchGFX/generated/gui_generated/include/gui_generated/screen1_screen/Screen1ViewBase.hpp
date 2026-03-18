@@ -28,6 +28,8 @@ protected:
     touchgfx::Box __background;
     touchgfx::Image image1;
 
+    void centerSplashImage();
+
 private:
 
 };
