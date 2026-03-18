@@ -2,6 +2,7 @@
 #define FRONTENDAPPLICATION_HPP
 
 #include <gui_generated/common/FrontendApplicationBase.hpp>
+#include <touchgfx/Callback.hpp>
 
 class FrontendHeap;
 
@@ -15,6 +16,7 @@ public:
 
     void startSplashTimer();
     void stopSplashTimer();
+    void gotoScreen2ScreenWipeTransitionEast();
 
     virtual void handleTickEvent()
     {
@@ -33,9 +35,11 @@ public:
     }
 private:
     static const uint16_t SPLASH_DURATION_TICKS = 180;
+    void gotoScreen2ScreenWipeTransitionEastImpl();
 
     uint16_t splashTickCount;
     bool splashTimerActive;
+    touchgfx::Callback<FrontendApplication> wipeTransitionCallback;
 };
 
 #endif // FRONTENDAPPLICATION_HPP

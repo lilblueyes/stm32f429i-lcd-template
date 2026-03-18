@@ -2,6 +2,7 @@
 #define FRONTENDHEAP_HPP
 
 #include <gui_generated/common/FrontendHeapBase.hpp>
+#include <touchgfx/transitions/WipeTransition.hpp>
 
 class FrontendHeap : public FrontendHeapBase
 {
@@ -17,8 +18,8 @@ public:
                             > UserDefinedPresenterTypes;
 
     /* List any user-defined transition types here*/
-    typedef touchgfx::meta::TypeList< touchgfx::meta::Nil, //Replace this with first user-defined type
-                            touchgfx::meta::Nil  //List must always end with meta::Nil !
+    typedef touchgfx::meta::TypeList< touchgfx::WipeTransition<touchgfx::EAST>,
+                            touchgfx::meta::Nil
                             > UserDefinedTransitionTypes;
 
 

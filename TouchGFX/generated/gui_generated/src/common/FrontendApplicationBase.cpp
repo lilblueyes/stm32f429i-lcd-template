@@ -5,7 +5,6 @@
 #include <gui_generated/common/FrontendApplicationBase.hpp>
 #include <gui/common/FrontendHeap.hpp>
 #include <touchgfx/transitions/NoTransition.hpp>
-#include <touchgfx/transitions/WipeTransition.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
 #include <touchgfx/Texts.hpp>
 #include <touchgfx/hal/HAL.hpp>
@@ -49,13 +48,13 @@ void FrontendApplicationBase::gotoScreen1ScreenNoTransitionImpl()
 
 // Screen2
 
-void FrontendApplicationBase::gotoScreen2ScreenWipeTransitionEast()
+void FrontendApplicationBase::gotoScreen2ScreenCoverTransitionWest()
 {
-    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoScreen2ScreenWipeTransitionEastImpl);
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoScreen2ScreenCoverTransitionWestImpl);
     pendingScreenTransitionCallback = &transitionCallback;
 }
 
-void FrontendApplicationBase::gotoScreen2ScreenWipeTransitionEastImpl()
+void FrontendApplicationBase::gotoScreen2ScreenCoverTransitionWestImpl()
 {
-    touchgfx::makeTransition<Screen2View, Screen2Presenter, touchgfx::WipeTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+    touchgfx::makeTransition<Screen2View, Screen2Presenter, touchgfx::CoverTransition<WEST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
