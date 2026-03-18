@@ -1,0 +1,49 @@
+# STM32CubeIDE / Eclipse workspace metadata
+.metadata/
+.settings/
+
+# Build outputs
+Debug/
+Release/
+
+# Generic binary/object outputs
+*.o
+*.obj
+*.su
+*.d
+*.cyclo
+*.elf
+*.axf
+*.map
+*.hex
+*.bin
+*.list
+*.lst
+
+# TouchGFX build artifacts
+TouchGFX/build/
+Debug/TouchGFX/build/
+TouchGFX/generated/fonts/cache/
+TouchGFX/generated/texts/cache/
+TouchGFX/generated/simulator/touchgfx.res
+
+# Simulator/runtime binaries
+*.exe
+*.dll
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+*~
+
+# Local backup files/folders
+backup_*.ioc
+*_backup.ioc
+*.launch
+TouchGFX/*_backup*.touchgfx
+Middlewares/ST/touchgfx_backup*/
+
+# OS files
+.DS_Store
+Thumbs.db
