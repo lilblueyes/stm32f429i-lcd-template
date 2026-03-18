@@ -24,7 +24,7 @@ void Screen1View::function1()
     HAL_GPIO_WritePin(GPIOG, GPIO_PIN_13 | GPIO_PIN_14, GPIO_PIN_RESET);
     HAL_Delay(100);
 #else
-    // Code de simulation (facultatif, peut être vide)
+    // No simulator-side action is needed for the LED-off demo path.
 #endif
 }
 
@@ -34,6 +34,6 @@ void Screen1View::function2()
     HAL_GPIO_WritePin(GPIOG, GPIO_PIN_13 | GPIO_PIN_14, GPIO_PIN_SET);
     HAL_Delay(100);
 #else
-    // Code de simulation (facultatif, peut être vide)
+    // No simulator-side action is needed for the LED-on demo path.
 #endif
 }
