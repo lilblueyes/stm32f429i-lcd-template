@@ -1,7 +1,7 @@
 
 {
   "Application": {
-    "Name": "STM32F429 LCD Template",
+    "Name": "stm32f429i-lcd-template",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
     "AvailableColorDepths": [ 16 ],
     "AvailableLCDs":

@@ -78,16 +78,20 @@ Screen2ViewBase::Screen2ViewBase() :
     dynamicStatusText.setPosition(28, 120, 100, 12);
     dynamicStatusText.setColor(touchgfx::Color::getColorFromRGB(238, 244, 250));
     dynamicStatusText.setLinespacing(0);
+    dynamicStatusTextBuffer[0] = 0;
+    dynamicStatusText.setWildcard(dynamicStatusTextBuffer);
     dynamicStatusText.setTypedText(touchgfx::TypedText(T_UI_DYNAMIC_STATUS));
     add(dynamicStatusText);
 
     dynamicCountText.setPosition(152, 120, 60, 12);
     dynamicCountText.setColor(touchgfx::Color::getColorFromRGB(238, 244, 250));
     dynamicCountText.setLinespacing(0);
+    dynamicCountTextBuffer[0] = 0;
+    dynamicCountText.setWildcard(dynamicCountTextBuffer);
     dynamicCountText.setTypedText(touchgfx::TypedText(T_UI_DYNAMIC_COUNT));
     add(dynamicCountText);
 
-    buttonWithLabelOn.setXY(51, 228);
+    buttonWithLabelOn.setXY(51, 223);
     buttonWithLabelOn.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_36_SMALL_ROUND_ACTIVE_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_36_SMALL_ROUND_PRESSED_ID));
     buttonWithLabelOn.setLabelText(touchgfx::TypedText(T_UI_BUTTON_ON));
     buttonWithLabelOn.setLabelColor(touchgfx::Color::getColorFromRGB(0, 0, 0));

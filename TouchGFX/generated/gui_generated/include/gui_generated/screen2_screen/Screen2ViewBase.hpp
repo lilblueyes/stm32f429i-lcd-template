@@ -58,6 +58,14 @@ protected:
     touchgfx::ButtonWithLabel buttonWithLabelOn;
     touchgfx::ButtonWithLabel buttonWithLabelOff;
 
+    /*
+     * Wildcard Buffers
+     */
+    static const uint16_t DYNAMICSTATUSTEXT_SIZE = 16;
+    touchgfx::Unicode::UnicodeChar dynamicStatusTextBuffer[DYNAMICSTATUSTEXT_SIZE];
+    static const uint16_t DYNAMICCOUNTTEXT_SIZE = 8;
+    touchgfx::Unicode::UnicodeChar dynamicCountTextBuffer[DYNAMICCOUNTTEXT_SIZE];
+
 private:
 
     /*

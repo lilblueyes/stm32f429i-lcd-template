@@ -6,6 +6,6 @@
 
 static unsigned short SIM_WIDTH = 240;
 static unsigned short SIM_HEIGHT = 320;
-#define SIM_TITLE "STM32F429 LCD Template"
+#define SIM_TITLE "stm32f429i-lcd-template"
 
 #endif // SIMCONSTANTS_HPP

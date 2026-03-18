@@ -14,14 +14,15 @@
         ],
         "Interactions": [
           {
-            "InteractionName": "Interaction1",
+            "InteractionName": "GenerateCoverTransition",
             "Trigger": {
-              "Type": "TriggerPhysicalButtonClicked"
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 97
             },
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionCover",
-              "ScreenTransitionDirection": "East",
+              "ScreenTransitionDirection": "West",
               "ActionComponent": "Screen2"
             }
           }
@@ -219,6 +220,10 @@
               "Red": 238,
               "Green": 244,
               "Blue": 250
+            },
+            "Wildcard1": {
+              "UseBuffer": true,
+              "BufferSize": 16
             }
           },
           {
@@ -234,13 +239,17 @@
               "Red": 238,
               "Green": 244,
               "Blue": 250
+            },
+            "Wildcard1": {
+              "UseBuffer": true,
+              "BufferSize": 8
             }
           },
           {
             "Type": "ButtonWithLabel",
             "Name": "buttonWithLabelOn",
             "X": 51,
-            "Y": 228,
+            "Y": 223,
             "Width": 138,
             "Height": 36,
             "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_36_small_round_pressed.png",
@@ -290,7 +299,7 @@
       }
     ],
     "CustomContainerDefinitions": [],
-    "Name": "STM32F429 LCD Template",
+    "Name": "stm32f429i-lcd-template",
     "Resolution": {
       "Width": 240,
       "Height": 320
@@ -326,10 +335,10 @@
     "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
     "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
     "PostGenerateTargetCommand": "touchgfx update_project",
-    "CompileSimulatorCommand": "powershell -NoProfile -ExecutionPolicy Bypass -File compile_simulator.ps1",
-    "RunSimulatorCommand": "powershell -NoProfile -ExecutionPolicy Bypass -File run_simulator.ps1",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
     "CompileTargetCommandOverride": "powershell -NoProfile -ExecutionPolicy Bypass -File compile_target.ps1",
-    "FlashTargetCommandOverride": "powershell -NoProfile -ExecutionPolicy Bypass -File flash_target.ps1",
+    "FlashTargetCommandOverride": "STM32_Programmer_CLI -c port=SWD mode=UR -hardRst -w ../Debug/stm32f429i-lcd-template.elf -v -rst",
     "LandscapeSkinX": 0,
     "LandscapeSkinY": 0,
     "PortraitSkinX": 0,

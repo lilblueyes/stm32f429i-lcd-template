@@ -28,12 +28,12 @@ void Screen1ViewBase::setupScreen()
 
 void Screen1ViewBase::handleKeyEvent(uint8_t key)
 {
-    if(0 == key)
+    if(97 == key)
     {
-        //Interaction1
-        //When hardware button 0 clicked change screen to Screen2
-        //Go to Screen2 with wipe transition towards East
-        application().gotoScreen2ScreenWipeTransitionEast();
+        //GenerateCoverTransition
+        //When hardware button 97 clicked change screen to Screen2
+        //Go to Screen2 with screen transition towards West
+        application().gotoScreen2ScreenCoverTransitionWest();
     
     }
 }
