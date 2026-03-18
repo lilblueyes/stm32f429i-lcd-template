@@ -16,6 +16,7 @@ void Screen2View::setupScreen()
     Screen2ViewBase::setupScreen();
     actionCount = 0;
     dynamicStatusText.setWildcard(dynamicStatusBuffer);
+    dynamicCountText.setWildcard(dynamicCountBuffer);
     updateDynamicStatus(false);
     applyVisualState(7, 15, 28, 18, 35, 64, 99, 186, 204, 14, 24, 43, 48, 66, 98, 7, 15, 28, 72, 82, 98, 72, 82, 98);
 #ifndef SIMULATOR
@@ -60,13 +61,15 @@ void Screen2View::updateDynamicStatus(bool ledsEnabled)
 {
     if (ledsEnabled)
     {
-        Unicode::snprintf(dynamicStatusBuffer, DYNAMIC_STATUS_BUFFER_SIZE, "Etat actuel ALLUME %u", actionCount);
+        Unicode::snprintf(dynamicStatusBuffer, DYNAMIC_STATUS_BUFFER_SIZE, "Etat ON");
     }
     else
     {
-        Unicode::snprintf(dynamicStatusBuffer, DYNAMIC_STATUS_BUFFER_SIZE, "Etat actuel ARRET %u", actionCount);
+        Unicode::snprintf(dynamicStatusBuffer, DYNAMIC_STATUS_BUFFER_SIZE, "Etat OFF");
     }
+    Unicode::snprintf(dynamicCountBuffer, DYNAMIC_COUNT_BUFFER_SIZE, "%u", actionCount);
     dynamicStatusText.invalidate();
+    dynamicCountText.invalidate();
 }
 
 void Screen2View::function1()

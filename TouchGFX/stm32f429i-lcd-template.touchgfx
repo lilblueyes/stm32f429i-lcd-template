@@ -1,353 +1,349 @@
 {
-    "Application":  {
-                        "Screens":  [
-                                        {
-                                            "Name":  "Screen1",
-                                            "Components":  [
-                                                               {
-                                                                   "Type":  "Image",
-                                                                   "Name":  "image1",
-                                                                   "Width":  240,
-                                                                   "Height":  320,
-                                                                   "RelativeFilename":  "ensta_logo.png",
-                                                                   "X":  0,
-                                                                   "Y":  0
-                                                               }
-                                                           ],
-                                            "Interactions":  [
-
-                                                             ]
-                                        },
-                                        {
-                                            "Name":  "Screen2",
-                                            "Components":  [
-                                                               {
-                                                                   "Type":  "Box",
-                                                                   "Name":  "backgroundPanel",
-                                                                   "Width":  240,
-                                                                   "Height":  320,
-                                                                   "Color":  {
-                                                                                 "Red":  7,
-                                                                                 "Green":  15,
-                                                                                 "Blue":  28
-                                                                             }
-                                                               },
-                                                               {
-                                                                   "Type":  "Box",
-                                                                   "Name":  "heroCard",
-                                                                   "X":  16,
-                                                                   "Y":  16,
-                                                                   "Width":  208,
-                                                                   "Height":  72,
-                                                                   "Color":  {
-                                                                                 "Red":  18,
-                                                                                 "Green":  35,
-                                                                                 "Blue":  64
-                                                                             }
-                                                               },
-                                                               {
-                                                                   "Type":  "Box",
-                                                                   "Name":  "accentBar",
-                                                                   "X":  28,
-                                                                   "Y":  26,
-                                                                   "Width":  6,
-                                                                   "Height":  52,
-                                                                   "Color":  {
-                                                                                 "Red":  99,
-                                                                                 "Green":  186,
-                                                                                 "Blue":  204
-                                                                             }
-                                                               },
-                                                               {
-                                                                   "Type":  "Box",
-                                                                   "Name":  "statusCard",
-                                                                   "X":  16,
-                                                                   "Y":  104,
-                                                                   "Width":  208,
-                                                                   "Height":  98,
-                                                                   "Color":  {
-                                                                                 "Red":  14,
-                                                                                 "Green":  24,
-                                                                                 "Blue":  43
-                                                                             }
-                                                               },
-                                                               {
-                                                                   "Type":  "Box",
-                                                                   "Name":  "statusDivider",
-                                                                   "X":  28,
-                                                                   "Y":  142,
-                                                                   "Width":  184,
-                                                                   "Height":  2,
-                                                                   "Color":  {
-                                                                                 "Red":  48,
-                                                                                 "Green":  66,
-                                                                                 "Blue":  98
-                                                                             }
-                                                               },
-                                                               {
-                                                                   "Type":  "Box",
-                                                                   "Name":  "footerStrip",
-                                                                   "Y":  224,
-                                                                   "Width":  240,
-                                                                   "Height":  96,
-                                                                   "Color":  {
-                                                                                 "Red":  7,
-                                                                                 "Green":  15,
-                                                                                 "Blue":  28
-                                                                             }
-                                                               },
-                                                               {
-                                                                   "Type":  "Box",
-                                                                   "Name":  "greenLedIndicator",
-                                                                   "X":  31,
-                                                                   "Y":  158,
-                                                                   "Width":  12,
-                                                                   "Height":  12,
-                                                                   "Color":  {
-                                                                                 "Red":  72,
-                                                                                 "Green":  82,
-                                                                                 "Blue":  98
-                                                                             }
-                                                               },
-                                                               {
-                                                                   "Type":  "Box",
-                                                                   "Name":  "redLedIndicator",
-                                                                   "X":  129,
-                                                                   "Y":  158,
-                                                                   "Width":  12,
-                                                                   "Height":  12,
-                                                                   "Color":  {
-                                                                                 "Red":  72,
-                                                                                 "Green":  82,
-                                                                                 "Blue":  98
-                                                                             }
-                                                               },
-                                                               {
-                                                                   "Type":  "TextArea",
-                                                                   "Name":  "heroTitle",
-                                                                   "X":  46,
-                                                                   "Y":  24,
-                                                                   "Width":  150,
-                                                                   "Height":  20,
-                                                                   "TextId":  "UI_HERO_TITLE",
-                                                                   "TextRotation":  "0",
-                                                                   "Color":  {
-                                                                                 "Red":  255,
-                                                                                 "Green":  255,
-                                                                                 "Blue":  255
-                                                                             }
-                                                               },
-                                                               {
-                                                                   "Type":  "TextArea",
-                                                                   "Name":  "boardNameText",
-                                                                   "X":  46,
-                                                                   "Y":  48,
-                                                                   "Width":  160,
-                                                                   "Height":  12,
-                                                                   "TextId":  "UI_BOARD_NAME",
-                                                                   "TextRotation":  "0",
-                                                                   "Color":  {
-                                                                                 "Red":  214,
-                                                                                 "Green":  227,
-                                                                                 "Blue":  238
-                                                                             }
-                                                               },
-                                                               {
-                                                                   "Type":  "TextArea",
-                                                                   "Name":  "subtitleText",
-                                                                   "X":  46,
-                                                                   "Y":  64,
-                                                                   "Width":  160,
-                                                                   "Height":  12,
-                                                                   "TextId":  "UI_SUBTITLE",
-                                                                   "TextRotation":  "0",
-                                                                   "Color":  {
-                                                                                 "Red":  156,
-                                                                                 "Green":  179,
-                                                                                 "Blue":  202
-                                                                             }
-                                                               },
-                                                               {
-                                                                   "Type":  "TextArea",
-                                                                   "Name":  "greenLedLabel",
-                                                                   "X":  52,
-                                                                   "Y":  158,
-                                                                   "Width":  72,
-                                                                   "Height":  12,
-                                                                   "TextId":  "UI_LED_GREEN",
-                                                                   "TextRotation":  "0",
-                                                                   "Color":  {
-                                                                                 "Red":  180,
-                                                                                 "Green":  204,
-                                                                                 "Blue":  221
-                                                                             }
-                                                               },
-                                                               {
-                                                                   "Type":  "TextArea",
-                                                                   "Name":  "redLedLabel",
-                                                                   "X":  150,
-                                                                   "Y":  158,
-                                                                   "Width":  62,
-                                                                   "Height":  12,
-                                                                   "TextId":  "UI_LED_RED",
-                                                                   "TextRotation":  "0",
-                                                                   "Color":  {
-                                                                                 "Red":  180,
-                                                                                 "Green":  204,
-                                                                                 "Blue":  221
-                                                                             }
-                                                               },
-                                                               {
-                                                                   "Type":  "TextArea",
-                                                                   "Name":  "dynamicStatusText",
-                                                                   "X":  28,
-                                                                   "Y":  120,
-                                                                   "Width":  184,
-                                                                   "Height":  12,
-                                                                   "TextId":  "UI_DYNAMIC_STATUS",
-                                                                   "TextRotation":  "0",
-                                                                   "Color":  {
-                                                                                 "Red":  238,
-                                                                                 "Green":  244,
-                                                                                 "Blue":  250
-                                                                             }
-                                                               },
-                                                               {
-                                                                   "Type":  "ButtonWithLabel",
-                                                                   "Name":  "buttonWithLabelOn",
-                                                                   "X":  51,
-                                                                   "Y":  228,
-                                                                   "Width":  138,
-                                                                   "Height":  36,
-                                                                   "Pressed":  "__generated\\alternate_theme_images_widgets_button_regular_height_36_small_round_pressed.png",
-                                                                   "Released":  "__generated\\alternate_theme_images_widgets_button_regular_height_36_small_round_active.png",
-                                                                   "TextId":  "UI_BUTTON_ON",
-                                                                   "ReleasedColor":  {
-                                                                                         "Red":  255,
-                                                                                         "Green":  255,
-                                                                                         "Blue":  255
-                                                                                     },
-                                                                   "PressedColor":  {
-                                                                                        "Red":  255,
-                                                                                        "Green":  255,
-                                                                                        "Blue":  255
-                                                                                    },
-                                                                   "TextRotation":  "0",
-                                                                   "Preset":  "alternate_theme\\presets\\button\\regular\\height_36\\small_round_active.json"
-                                                               },
-                                                               {
-                                                                   "Type":  "ButtonWithLabel",
-                                                                   "Name":  "buttonWithLabelOff",
-                                                                   "X":  51,
-                                                                   "Y":  268,
-                                                                   "Width":  138,
-                                                                   "Height":  36,
-                                                                   "Pressed":  "__generated\\alternate_theme_images_widgets_button_regular_height_36_small_round_pressed.png",
-                                                                   "Released":  "__generated\\alternate_theme_images_widgets_button_regular_height_36_small_round_action.png",
-                                                                   "TextId":  "UI_BUTTON_OFF",
-                                                                   "ReleasedColor":  {
-                                                                                         "Red":  255,
-                                                                                         "Green":  255,
-                                                                                         "Blue":  255
-                                                                                     },
-                                                                   "PressedColor":  {
-                                                                                        "Red":  255,
-                                                                                        "Green":  255,
-                                                                                        "Blue":  255
-                                                                                    },
-                                                                   "TextRotation":  "0",
-                                                                   "Preset":  "alternate_theme\\presets\\button\\regular\\height_36\\small_round_action.json"
-                                                               }
-                                                           ],
-                                            "Interactions":  [
-                                                                 {
-                                                                     "InteractionName":  "TurnLedsOff",
-                                                                     "Trigger":  {
-                                                                                     "Type":  "TriggerClicked",
-                                                                                     "TriggerComponent":  "buttonWithLabelOff"
-                                                                                 },
-                                                                     "Action":  {
-                                                                                    "Type":  "ActionCustom",
-                                                                                    "FunctionName":  "function1"
-                                                                                }
-                                                                 },
-                                                                 {
-                                                                     "InteractionName":  "TurnLedsOn",
-                                                                     "Trigger":  {
-                                                                                     "Type":  "TriggerClicked",
-                                                                                     "TriggerComponent":  "buttonWithLabelOn"
-                                                                                 },
-                                                                     "Action":  {
-                                                                                    "Type":  "ActionCustom",
-                                                                                    "FunctionName":  "function2"
-                                                                                }
-                                                                 }
-                                                             ]
-                                        }
-                                    ],
-                        "CustomContainerDefinitions":  [
-
-                                                       ],
-                        "Name":  "STM32F429 LCD Template",
-                        "Resolution":  {
-                                           "Width":  240,
-                                           "Height":  320
-                                       },
-                        "SelectedColorDepth":  16,
-                        "StartupScreenName":  "Screen1",
-                        "SelectedStartupLanguage":  "GB",
-                        "TouchGfxPath":  "../Middlewares/ST/touchgfx",
-                        "UIPath":  ".",
-                        "AvailableColorDepths":  [
-                                                     16
-                                                 ],
-                        "AvailableLCDs":  {
-                                              "16":  "LCD16bpp"
-                                          },
-                        "AvailableSections":  [
-                                                  "ExtFlashSection",
-                                                  "IntFlashSection"
-                                              ],
-                        "AvailableResolutions":  [
-                                                     {
-                                                         "Width":  240,
-                                                         "Height":  320
-                                                     }
-                                                 ],
-                        "PhysicalButtons":  [
-
-                                            ],
-                        "FrameworkFeatures":  {
-                                                  "LCD16bpp":  {
-                                                                   "Id":  "LCD16bpp",
-                                                                   "IsEnabled":  true
-                                                               }
-                                              },
-                        "GenerateAssetsCommand":  "make -f simulator/gcc/Makefile assets -j8",
-                        "PostGenerateCommand":  "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
-                        "PostGenerateTargetCommand":  "touchgfx update_project",
-                        "CompileSimulatorCommand":  "make -f simulator/gcc/Makefile -j8",
-                        "RunSimulatorCommand":  "build\\bin\\simulator.exe",
-                        "CompileTargetCommandOverride":  "powershell -NoProfile -ExecutionPolicy Bypass -File compile_target.ps1",
-                        "FlashTargetCommandOverride":  "powershell -NoProfile -ExecutionPolicy Bypass -File flash_target.ps1",
-                        "LandscapeSkinX":  0,
-                        "LandscapeSkinY":  0,
-                        "PortraitSkinX":  0,
-                        "PortraitSkinY":  0,
-                        "DisplayOrientation":  "Portrait",
-                        "Family":  "STM32F4",
-                        "SubFamily":  "STM32F429/439",
-                        "Toolchain":  "STM32CubeIDE",
-                        "Platform":  "m4",
-                        "ProjectFile":  "../stm32f429i-lcd-template.ioc",
-                        "OptionalComponentsRoot":  "../Middlewares/ST/touchgfx_components",
-                        "OptionalComponents":  [
-
-                                               ],
-                        "AdditionalFeatures":  [
-
-                                               ]
-                    },
-    "Version":  "4.24.2",
-    "CreatedBy":  "4.24.1"
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Screen1",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "ensta_logo.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen2"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Screen2",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "backgroundPanel",
+            "Width": 240,
+            "Height": 320,
+            "Color": {
+              "Red": 7,
+              "Green": 15,
+              "Blue": 28
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "heroCard",
+            "X": 16,
+            "Y": 16,
+            "Width": 208,
+            "Height": 72,
+            "Color": {
+              "Red": 18,
+              "Green": 35,
+              "Blue": 64
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "accentBar",
+            "X": 28,
+            "Y": 26,
+            "Width": 6,
+            "Height": 52,
+            "Color": {
+              "Red": 99,
+              "Green": 186,
+              "Blue": 204
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "statusCard",
+            "X": 16,
+            "Y": 104,
+            "Width": 208,
+            "Height": 98,
+            "Color": {
+              "Red": 14,
+              "Green": 24,
+              "Blue": 43
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "statusDivider",
+            "X": 28,
+            "Y": 142,
+            "Width": 184,
+            "Height": 2,
+            "Color": {
+              "Red": 48,
+              "Green": 66,
+              "Blue": 98
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "footerStrip",
+            "Y": 224,
+            "Width": 240,
+            "Height": 96,
+            "Color": {
+              "Red": 7,
+              "Green": 15,
+              "Blue": 28
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "greenLedIndicator",
+            "X": 31,
+            "Y": 158,
+            "Width": 12,
+            "Height": 12,
+            "Color": {
+              "Red": 72,
+              "Green": 82,
+              "Blue": 98
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "redLedIndicator",
+            "X": 129,
+            "Y": 158,
+            "Width": 12,
+            "Height": 12,
+            "Color": {
+              "Red": 72,
+              "Green": 82,
+              "Blue": 98
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "heroTitle",
+            "X": 42,
+            "Y": 24,
+            "Width": 168,
+            "Height": 16,
+            "TextId": "UI_HERO_TITLE",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "boardNameText",
+            "X": 42,
+            "Y": 46,
+            "Width": 166,
+            "Height": 12,
+            "TextId": "UI_BOARD_NAME",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 214,
+              "Green": 227,
+              "Blue": 238
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "subtitleText",
+            "X": 42,
+            "Y": 60,
+            "Width": 166,
+            "Height": 12,
+            "TextId": "UI_SUBTITLE",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 156,
+              "Green": 179,
+              "Blue": 202
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "greenLedLabel",
+            "X": 52,
+            "Y": 158,
+            "Width": 72,
+            "Height": 12,
+            "TextId": "UI_LED_GREEN",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 180,
+              "Green": 204,
+              "Blue": 221
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "redLedLabel",
+            "X": 150,
+            "Y": 158,
+            "Width": 62,
+            "Height": 12,
+            "TextId": "UI_LED_RED",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 180,
+              "Green": 204,
+              "Blue": 221
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "dynamicStatusText",
+            "X": 28,
+            "Y": 120,
+            "Width": 100,
+            "Height": 12,
+            "TextId": "UI_DYNAMIC_STATUS",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 238,
+              "Green": 244,
+              "Blue": 250
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "dynamicCountText",
+            "X": 152,
+            "Y": 120,
+            "Width": 60,
+            "Height": 12,
+            "TextId": "UI_DYNAMIC_COUNT",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 238,
+              "Green": 244,
+              "Blue": 250
+            }
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonWithLabelOn",
+            "X": 51,
+            "Y": 228,
+            "Width": 138,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_36_small_round_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_36_small_round_active.png",
+            "TextId": "UI_BUTTON_ON",
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_36\\small_round_active.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "buttonWithLabelOff",
+            "X": 51,
+            "Y": 268,
+            "Width": 138,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_36_small_round_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_36_small_round_action.png",
+            "TextId": "UI_BUTTON_OFF",
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_36\\small_round_action.json"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "TurnLedsOff",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonWithLabelOff"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "function1"
+            }
+          },
+          {
+            "InteractionName": "TurnLedsOn",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonWithLabelOn"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "function2"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "STM32F429 LCD Template",
+    "Resolution": {
+      "Width": 240,
+      "Height": 320
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Screen1",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 240,
+        "Height": 320
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "powershell -NoProfile -ExecutionPolicy Bypass -File compile_simulator.ps1",
+    "RunSimulatorCommand": "powershell -NoProfile -ExecutionPolicy Bypass -File run_simulator.ps1",
+    "CompileTargetCommandOverride": "powershell -NoProfile -ExecutionPolicy Bypass -File compile_target.ps1",
+    "FlashTargetCommandOverride": "powershell -NoProfile -ExecutionPolicy Bypass -File flash_target.ps1",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Portrait",
+    "Family": "STM32F4",
+    "SubFamily": "STM32F429/439",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m4",
+    "ProjectFile": "../stm32f429i-lcd-template.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": []
+  },
+  "Version": "4.24.2",
+  "CreatedBy": "4.24.1"
 }

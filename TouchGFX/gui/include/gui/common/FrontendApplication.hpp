@@ -32,7 +32,7 @@ public:
         FrontendApplicationBase::handleTickEvent();
     }
 private:
-    static const uint16_t SPLASH_DURATION_TICKS = 300;
+    static const uint16_t SPLASH_DURATION_TICKS = 180;
 
     uint16_t splashTickCount;
     bool splashTimerActive;

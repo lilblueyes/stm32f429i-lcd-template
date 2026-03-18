@@ -6,7 +6,7 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
-      <Text Id="UI_HERO_TITLE" Alignment="Left" TypographyId="Default">
+      <Text Id="UI_HERO_TITLE" Alignment="Left" TypographyId="Title">
         <Translation Language="GB">STM32F429I-DISCO</Translation>
       </Text>
       <Text Id="UI_BOARD_NAME" Alignment="Left" TypographyId="Small">
@@ -36,10 +36,14 @@
       <Text Id="UI_DYNAMIC_STATUS" Alignment="Left" TypographyId="Small">
         <Translation Language="GB">&lt;state&gt;</Translation>
       </Text>
+      <Text Id="UI_DYNAMIC_COUNT" Alignment="Right" TypographyId="Small">
+        <Translation Language="GB">&lt;count&gt;</Translation>
+      </Text>
     </TextGroup>
   </Texts>
   <Typographies>
     <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Title" Font="verdana.ttf" Size="16" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 :-" />
   </Typographies>

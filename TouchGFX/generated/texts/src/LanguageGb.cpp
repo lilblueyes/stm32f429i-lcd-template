@@ -19,5 +19,6 @@ KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
     110, // T_UI_LED_RED: "LD4 Rouge"
     122, // T_UI_BUTTON_OFF: "LED OFF"
     130, // T_UI_BUTTON_ON: "LED ON"
-    120  // T_UI_DYNAMIC_STATUS: "<>"
+    120, // T_UI_DYNAMIC_STATUS: "<>"
+    120  // T_UI_DYNAMIC_COUNT: "<>"
 };

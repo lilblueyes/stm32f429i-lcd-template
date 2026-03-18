@@ -54,6 +54,7 @@ protected:
     touchgfx::TextArea greenLedLabel;
     touchgfx::TextArea redLedLabel;
     touchgfx::TextAreaWithOneWildcard dynamicStatusText;
+    touchgfx::TextAreaWithOneWildcard dynamicCountText;
     touchgfx::ButtonWithLabel buttonWithLabelOn;
     touchgfx::ButtonWithLabel buttonWithLabelOff;
 

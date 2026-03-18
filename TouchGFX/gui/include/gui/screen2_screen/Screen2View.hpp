@@ -17,7 +17,8 @@ public:
     virtual void function2();
 
 protected:
-    static const uint16_t DYNAMIC_STATUS_BUFFER_SIZE = 32;
+    static const uint16_t DYNAMIC_STATUS_BUFFER_SIZE = 16;
+    static const uint16_t DYNAMIC_COUNT_BUFFER_SIZE = 8;
 
     void applyVisualState(uint8_t backgroundRed, uint8_t backgroundGreen, uint8_t backgroundBlue,
                           uint8_t heroRed, uint8_t heroGreen, uint8_t heroBlue,
@@ -30,6 +31,7 @@ protected:
     void updateDynamicStatus(bool ledsEnabled);
 
     touchgfx::Unicode::UnicodeChar dynamicStatusBuffer[DYNAMIC_STATUS_BUFFER_SIZE];
+    touchgfx::Unicode::UnicodeChar dynamicCountBuffer[DYNAMIC_COUNT_BUFFER_SIZE];
     uint16_t actionCount;
 };
 
