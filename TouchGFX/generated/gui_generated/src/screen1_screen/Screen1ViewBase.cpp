@@ -17,7 +17,7 @@ Screen1ViewBase::Screen1ViewBase()
     add(splashBackdrop);
 
     splashAccent.setPosition(0, 224, 240, 96);
-    splashAccent.setColor(touchgfx::Color::getColorFromRGB(122, 8, 8));
+    splashAccent.setColor(touchgfx::Color::getColorFromRGB(170, 20, 20));
     add(splashAccent);
 
     heroTitle.setPosition(20, 112, 200, 20);

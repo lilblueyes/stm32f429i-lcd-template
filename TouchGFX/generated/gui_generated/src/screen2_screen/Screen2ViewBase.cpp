@@ -34,7 +34,7 @@ Screen2ViewBase::Screen2ViewBase() :
     add(statusDivider);
 
     footerStrip.setPosition(0, 224, 240, 96);
-    footerStrip.setColor(touchgfx::Color::getColorFromRGB(10, 16, 29));
+    footerStrip.setColor(touchgfx::Color::getColorFromRGB(7, 15, 28));
     add(footerStrip);
 
     greenLedIndicator.setPosition(31, 158, 12, 12);
