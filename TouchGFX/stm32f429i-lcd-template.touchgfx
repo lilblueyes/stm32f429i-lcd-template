@@ -121,7 +121,7 @@
       }
     ],
     "CustomContainerDefinitions": [],
-    "Name": "FIPUI",
+    "Name": "STM32F429 LCD Template",
     "Resolution": {
       "Width": 240,
       "Height": 320
@@ -160,7 +160,7 @@
     "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
     "RunSimulatorCommand": "build\\bin\\simulator.exe",
     "CompileTargetCommandOverride": "powershell -NoProfile -ExecutionPolicy Bypass -File compile_target.ps1",
-    "FlashTargetCommandOverride": "STM32_Programmer_CLI -c port=SWD -w ../Debug/base.elf -v -rst",
+    "FlashTargetCommandOverride": "STM32_Programmer_CLI -c port=SWD -w ../Debug/stm32f429i-lcd-template.elf -v -rst",
     "LandscapeSkinX": 0,
     "LandscapeSkinY": 0,
     "PortraitSkinX": 0,
@@ -170,7 +170,7 @@
     "SubFamily": "STM32F429/439",
     "Toolchain": "STM32CubeIDE",
     "Platform": "m4",
-    "ProjectFile": "../base.ioc",
+    "ProjectFile": "../stm32f429i-lcd-template.ioc",
     "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
     "OptionalComponents": [],
     "AdditionalFeatures": []

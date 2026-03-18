@@ -6,6 +6,6 @@
 
 static unsigned short SIM_WIDTH = 240;
 static unsigned short SIM_HEIGHT = 320;
-#define SIM_TITLE "FIPUI"
+#define SIM_TITLE "STM32F429 LCD Template"
 
 #endif // SIMCONSTANTS_HPP
