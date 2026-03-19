@@ -9,14 +9,14 @@ Base de projet pour `STM32F429I-DISCO` avec :
 
 Le projet démarre sur un splash screen puis ouvre un écran simple avec deux boutons pour piloter les LED.
 
+![Aperçu du projet dans TouchGFX Designer](./docs/touchgfx-designer.png)
+
 ## Contenu
 
 - projet `STM32CubeIDE`
 - configuration CubeMX dans [stm32f429i-lcd-template.ioc](/c:/Users/Jocelyn/Documents/GitHub/stm32f429i-lcd-template/stm32f429i-lcd-template.ioc)
 - projet TouchGFX dans [stm32f429i-lcd-template.touchgfx](/c:/Users/Jocelyn/Documents/GitHub/stm32f429i-lcd-template/TouchGFX/stm32f429i-lcd-template.touchgfx)
 - sources `HAL`, `CMSIS`, `FreeRTOS`, `BSP` et `TouchGFX`
-
-![Aperçu du projet dans TouchGFX Designer](./docs/touchgfx-designer.png)
 
 ## Environnement utilisé pour les tests
 
